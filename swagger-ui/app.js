@@ -4,7 +4,7 @@ const swaggerUI = require('swagger-ui-express')
 
 const app = express()
 app.use(
-  '/swagger',
+  '/api-docs',
   swaggerUI.serve,
   swaggerUI.setup(null, {
     swaggerOptions: {
