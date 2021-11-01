@@ -23,15 +23,15 @@ Resources:
         SwaggerUiApi:
           Type: Api
           Properties:
-            Path: /swagger
+            Path: /api-docs
             Method: GET
         SwaggerUiApiProxy:
           Type: Api
           Properties:
-            Path: /swagger/{proxy+}
+            Path: /api-docs/{proxy+}
             Method: GET
 
 Outputs:
   SwaggerUiUrl:
     Description: Swagger UI URL
-    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/swagger/
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/api-docs/
